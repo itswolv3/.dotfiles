@@ -16,13 +16,18 @@ Plugin 'AutoClose'
 Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
-let g:airline_theme='gruvbox'
-
 Plugin 'scrooloose/nerdtree'
+
+" Web dev tings
+Plugin 'lepture/vim-jinja'
+Plugin 'mattn/emmet-vim'
+
+let g:user_emmet_install_global = 0
+autocmd FileType html, css EmmetInstall
 
 " Themes
 Plugin 'morhetz/gruvbox'
+let g:airline_theme='gruvbox'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -74,3 +79,7 @@ hi! NonText ctermbg=NONE guibg=NONE
 
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
+
+
+" Jinja setup
+au BufNewFile, BufRead *.html, *.htm, *.shtml, *.stm, set ft=jinja
