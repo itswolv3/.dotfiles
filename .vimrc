@@ -7,27 +7,19 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" Python Plugins
-Plugin 'python-mode/python-mode'
-Plugin 'hdima/python-syntax'
-
-" Misc Plugins
-Plugin 'AutoClose'
-Plugin 'valloric/youcompleteme'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" NERDTree
 Plugin 'scrooloose/nerdtree'
 
-" Web dev tings
-Plugin 'lepture/vim-jinja'
+" Airlines
+Plugin 'vim-airline/vim-airline'
+
+" Autoclose
+Plugin 'AutoClose'
+
+" Python
+Plugin 'klen/python-mode'
+
 Plugin 'mattn/emmet-vim'
-
-let g:user_emmet_install_global = 0
-autocmd FileType html, css EmmetInstall
-
-" Themes
-Plugin 'morhetz/gruvbox'
-let g:airline_theme='gruvbox'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -39,7 +31,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -64,22 +56,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Visual Tweaks
 set number
 
-let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_transparent_bg = 1
-
-set background=dark
-
-colorscheme gruvbox
-
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-
-" Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
-
-" Jinja setup
-au BufNewFile, BufRead *.html, *.htm, *.shtml, *.stm, set ft=jinja
+" Vim Indent
+set autoindent expandtab tabstop=4 shiftwidth=4
