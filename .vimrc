@@ -7,6 +7,9 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" YCM
+Plugin 'valloric/youcompleteme'
+
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 
@@ -57,6 +60,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set number
+set relativenumber
 
 autocmd VimEnter * NERDTree | wincmd p
 
