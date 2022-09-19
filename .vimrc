@@ -59,10 +59,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Set scrolling relative numbers
 set number
 set relativenumber
 
-autocmd VimEnter * NERDTree | wincmd p
+" NERDTree show on start uncomment here
+" autocmd VimEnter * NERDTree | wincmd p
 
 " Vim Indent
 set autoindent expandtab tabstop=4 shiftwidth=4
+
+" Syntax Highlightinh
+syntax on
