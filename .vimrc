@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+set backspace=2
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -9,21 +9,20 @@ call vundle#begin()
 
 " YCM
 Plugin 'valloric/youcompleteme'
-
 " NERDTree
 Plugin 'scrooloose/nerdtree'
-
 " Airlines
 Plugin 'vim-airline/vim-airline'
-
 " Autoclose
 Plugin 'AutoClose'
-
 " Python
 Plugin 'klen/python-mode'
-
+" Emmet
 Plugin 'mattn/emmet-vim'
-
+" Vim-go
+Plugin 'fatih/vim-go'
+" SuperTab
+Plugin 'ervandew/supertab'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -33,12 +32,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
@@ -69,5 +62,5 @@ set relativenumber
 " Vim Indent
 set autoindent expandtab tabstop=4 shiftwidth=4
 
-" Syntax Highlightinh
+" Syntax Highlighting
 syntax on
