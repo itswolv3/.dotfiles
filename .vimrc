@@ -1,11 +1,20 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set backspace=2
+
+" Set scrolling relative numbers
+set number
+set relativenumber
+
+" Syntax Highlighting
+syntax on
+
+" Vim Indent
+set autoindent expandtab tabstop=4 shiftwidth=4
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " YCM
 Plugin 'valloric/youcompleteme'
@@ -26,20 +35,14 @@ Plugin 'ervandew/supertab'
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
+
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -52,15 +55,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Set scrolling relative numbers
-set number
-set relativenumber
 
 " NERDTree show on start uncomment here
 " autocmd VimEnter * NERDTree | wincmd p
 
-" Vim Indent
-set autoindent expandtab tabstop=4 shiftwidth=4
-
-" Syntax Highlighting
-syntax on
