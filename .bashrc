@@ -4,7 +4,8 @@ case $- in
     *) return;;
 esac
 
-[[ -z "$TMUX" ]] && exec tmux
+# Uncomment to run tmux at terminal start
+# [[ -z "$TMUX" ]] && exec tmux
 
 # Path to your oh-my-bash installation.
 export OSH=/home/wolv3/.oh-my-bash
