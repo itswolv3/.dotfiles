@@ -1,16 +1,21 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-set backspace=2
+set backspace=indent,eol,start
 set nowrap
- 
+set ruler 
 set number
 set relativenumber
-
-" Syntax Highlighting
-syntax on
+set showcmd
+set showmatch
+set ignorecase
+set autoread
+set cursorline
 
 " Vim Indent
 set autoindent expandtab tabstop=4 shiftwidth=4
+
+" Syntax Highlighting
+syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
