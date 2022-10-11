@@ -63,3 +63,10 @@ hi Normal  guibg=NONE ctermbg=NONE
 
 " NERDTree show on start uncomment here
 " autocmd VimEnter * NERDTree | wincmd p
+
+" Insert movement
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
