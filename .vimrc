@@ -48,6 +48,7 @@ Plugin 'tpope/vim-fugitive'
 " Visual Stuff
 Plugin 'joshdick/onedark.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'sickill/vim-monokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,7 +58,7 @@ filetype plugin indent on    " required
 let g:ackprg = 'ag --vimgrep'
 
 " Theme
-colorscheme onedark
+colorscheme monokai
 " Background Transparency
 hi Normal  guibg=NONE ctermbg=NONE 
 
