@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  nvim = {
-    loaded = true,
-    path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/nvim",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/packer.nvim",

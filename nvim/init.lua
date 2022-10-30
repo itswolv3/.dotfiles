@@ -1,15 +1,8 @@
-vim.g.mapleader = "?"
-vim.g.catppuccin_flavor = "macchito"
-vim.api.nvim_set_keymap('i', 'jk' ,'<ESC>', { noremap = true })
-
-vim.o.relativenumber = true
+vim.o.cursorline = true
 vim.o.number = true
-vim.o.nowrap = true
-vim.o.showcmd = true
+vim.o.relativenumber = true
+vim.o.wrap = true
 
-vim.cmd[[colorscheme catppuccin]]
+vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
 
-require 'packer-plugins'
-
-require 'color'
-
+require("plugins")
