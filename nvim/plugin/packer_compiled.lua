@@ -110,10 +110,25 @@ _G.packer_plugins = {
     path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/vim-javascript",
+    url = "https://github.com/pangloss/vim-javascript"
+  },
+  ["vim-jsx"] = {
+    loaded = true,
+    path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/vim-jsx",
+    url = "https://github.com/mxw/vim-jsx"
+  },
   ["vim-jsx-pretty"] = {
     loaded = true,
     path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
     url = "https://github.com/maxmellon/vim-jsx-pretty"
+  },
+  ["vim-vue"] = {
+    loaded = true,
+    path = "/home/wolv3/.local/share/nvim/site/pack/packer/start/vim-vue",
+    url = "https://github.com/posva/vim-vue"
   }
 }
 
