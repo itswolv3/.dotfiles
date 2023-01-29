@@ -9,7 +9,8 @@ vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true })
 ]]--
 
 require("plugins")
-require("colors.onedark")
+-- require("colors.onedark")
+require("colors.rose-pine")
 require("lualine").setup()
 
 vim.cmd("colorscheme onedark")
