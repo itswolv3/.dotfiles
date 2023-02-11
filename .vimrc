@@ -22,7 +22,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Completion 
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
+Plugin 'neoclide/coc.nvim'
 Plugin 'ervandew/supertab'
 
 " Language Stuff
