@@ -8,7 +8,7 @@ window:
         y: 0
     dynamic_padding: false
     decorations: full # full, none
-    startup_mode: Maximized # Windowed, Maximized, Fullscreen
+    startup_mode: Windowed # Windowed, Maximized, Fullscreen
 font:
     normal:
         family: Source Code Pro
@@ -20,7 +20,7 @@ font:
         family: Source Code Pro
         style: Italic
     size:
-        12.0
+        13.0
     offset:
         x: 0
         y: 0
