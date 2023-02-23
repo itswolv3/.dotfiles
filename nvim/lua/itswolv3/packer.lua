@@ -21,15 +21,32 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 
     -- Code completion
-    use 'ervandew/supertab'
-    use 'neoclide/coc.nvim'
-    use 'ervandew/supertab'
-   
-    -- Syntax Highlighting
-    use 'maxmellon/vim-jsx-pretty'-- React Syntax highlighting
+    use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  requires = {
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
+
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-buffer'},
+		  {'hrsh7th/cmp-path'},
+		  {'saadparwaiz1/cmp_luasnip'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'hrsh7th/cmp-nvim-lua'},
+
+			-- Snippets
+			{'L3MON4D3/LuaSnip'},
+			{'rafamadriz/friendly-snippets'},
+		}
+	} 
+	-- Syntax Highlighting
+	use 'maxmellon/vim-jsx-pretty'-- React Syntax highlighting
 	use 'pangloss/vim-javascript' --JS Syntax
 	use 'mxw/vim-jsx' -- React Syntax
-    use 'posva/vim-vue' -- Vue plugin
+	use 'posva/vim-vue' -- Vue plugin
 
     -- Visual Stuff
     use({
