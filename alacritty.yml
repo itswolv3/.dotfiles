@@ -11,16 +11,16 @@ window:
     startup_mode: Windowed # Windowed, Maximized, Fullscreen
 font:
     normal:
-        family: Source Code Pro
-        style: medium
+        family: Fira Mono
+        style: Regular
     bold:
-        family: Source Code Pro
+        family: Fira Mono
         style: Bold
     italic:
-        family: Source Code Pro
+        family: Fira Mono
         style: Italic
     size:
-        13.0
+        12.0
     offset:
         x: 0
         y: 0

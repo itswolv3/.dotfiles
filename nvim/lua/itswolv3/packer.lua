@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
     
-    -- Nvim additions
+	-- Nvim additions
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.1',
 		-- or                            , branch = '0.1.x',
@@ -55,6 +55,14 @@ return require('packer').startup(function(use)
 		config = function()
 			require("rose-pine").setup()
 			vim.cmd('colorscheme rose-pine')
+		end
+	})
+	use ({
+		'tanvirtin/monokai.nvim',
+		as = 'monokai',
+		config = function()
+			require('monokai').setup()
+			vim.cmd('colorscheme monokai')
 		end
 	})
 	use {
