@@ -8,9 +8,9 @@ esac
 # [[ -z "$TMUX" ]] && exec tmux
 
 # Path to your oh-my-bash installation.
-export OSH=/home/wolv3/.oh-my-bash
+export OSH=/home/$USER/.oh-my-bash
 # Theme selection
-OSH_THEME="mairan"
+OSH_THEME="cupcake"
 # Let OMB use sudo
 OMB_USE_SUDO=true
 
