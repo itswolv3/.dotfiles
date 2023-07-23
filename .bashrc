@@ -29,6 +29,10 @@ plugins=(
   bashmarks
 )
 
+alias py="python3"
+alias update="./.update.sh"
+alias top="bpytop"
+
 source "$OSH"/oh-my-bash.sh
 
 export NVM_DIR="$HOME/.nvm"
