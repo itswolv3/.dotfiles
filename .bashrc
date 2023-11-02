@@ -10,7 +10,7 @@ esac
 # Path to your oh-my-bash installation.
 export OSH=/home/$USER/.oh-my-bash
 # Theme selection
-OSH_THEME="cupcake"
+OSH_THEME="powerline-multiline"
 # Let OMB use sudo
 OMB_USE_SUDO=true
 
@@ -32,6 +32,7 @@ plugins=(
 alias py="python3"
 alias update="./.update.sh"
 alias top="bpytop"
+alias :q="exit"
 
 source "$OSH"/oh-my-bash.sh
 
