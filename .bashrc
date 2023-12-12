@@ -10,7 +10,7 @@ esac
 # Path to your oh-my-bash installation.
 export OSH=/home/$USER/.oh-my-bash
 # Theme selection
-OSH_THEME="powerline-multiline"
+OSH_THEME="edsonarios"
 # Let OMB use sudo
 OMB_USE_SUDO=true
 
