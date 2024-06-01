@@ -9,7 +9,7 @@ export OSH='/home/reeceeric82/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="axin"
+OSH_THEME="mairan"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -166,6 +166,7 @@ export NVM_DIR="$HOME/.nvm"
 # Custom Alias:
 alias pys="source venv/bin/activate"
 alias py="python3"
+alias mkpyv="python3 -m venv venv"
 alias docker="sudo docker"
 
 alias update="./.update.sh"
@@ -174,3 +175,10 @@ alias :q="exit"
 
 # Rust:
 # . "$HOME/.cargo/env"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Created by `pipx` on 2024-05-29 12:33:54
+export PATH="$PATH:/home/reeceeric82/.local/bin"
