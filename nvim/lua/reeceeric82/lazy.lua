@@ -40,4 +40,6 @@ require("lazy").setup({
 
 {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 {"mbbill/undotree"},
+{'hrsh7th/vim-vsnip'},
+{'hrsh7th/vim-vsnip-integ'}
 })
