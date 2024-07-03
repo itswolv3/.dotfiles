@@ -9,7 +9,7 @@ export OSH='/home/reeceeric82/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="mairan"
+OSH_THEME="rr"
 
 OMB_USE_SUDO=true
 
